@@ -14,7 +14,7 @@ var app = express();
 
 //Set up mongoose connection
 var mongoose = require('mongoose');
-var mongoDB = process.env.MONGODB_URI ||"mongodb://localhost:27017/monadb";
+var mongoDB = process.env.MONGODB_URI ||"mongodb://suraj:1234@ds127894.mlab.com:27894/local_library";
 mongoose.connect(mongoDB);
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
